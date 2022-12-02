@@ -139,24 +139,9 @@
 				const loader = new GLTFLoader();
 				const that = this;
 				window.addEventListener('resize', this.onWindowResize);
-				loader.load("http://localhost/models/girl.glb", function(gltf) {
-					const model = gltf.scene;
-					// that.scene.add(model);
-					// model.traverse( function ( object ) {
-
-					// 	if ( object.isMesh ) object.castShadow = true;
-
-					// } );
-
-					// let skeleton = new THREE.SkeletonHelper( model );
-					// skeleton.visible = false;
-					// that.scene.add( skeleton );
-
+			
 					that.animate();
-					console.log("girl.glb: ", gltf.scene);
-				}, undefined, function(error) {
-					console.error(error);
-				});
+				
 			}
 		}
 	}
